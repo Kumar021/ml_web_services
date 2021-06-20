@@ -48,7 +48,7 @@ class RandomForestClassifier:
         new_input = MultiColumnLabelEncoder(columns = cate_columns).fit_transform(new_dataset.iloc[:, :])
 
         new_input_values = new_input.values
-        print("new_input_values :", new_input)
+        #print("new_input_values :", new_input)
 
         return new_input
 
