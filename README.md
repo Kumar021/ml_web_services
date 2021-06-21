@@ -26,5 +26,5 @@ Markup : ![picture alt]("https://github.com/Kumar021/ml_web_services/blob/main/i
 
 Markup : ![picture alt]("https://github.com/Kumar021/ml_web_services/blob/main/image/Predict-%E2%80%93-result_endpoints.png")
 
-Markup : ![picture alt](https://github.com/Kumar021/ml_web_services/blob/main/image/MLRequest-object-2-Change-ml-request-Django-site-admin.png")
+![alt text](https://github.com/Kumar021/ml_web_services/blob/main/image/MLRequest-object-2-Change-ml-request-Django-site-admin.png?raw=true")
 ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
