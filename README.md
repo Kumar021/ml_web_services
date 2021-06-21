@@ -18,13 +18,12 @@ In the <kbd>backend</kbd> directory there is Django application.
 In the <kbd>docker</kbd> directory there are dockerfiles for running the service in the container.
 
 
-Markup : ![picture alt]("https://github.com/Kumar021/ml_web_services/blob/main/image/ml_algorithm_code.png")
+![alt text](https://github.com/Kumar021/ml_web_services/blob/main/image/ml_algorithm_code.png?raw=true "ml_algorithm")
 
-Markup : ![picture alt]("https://github.com/Kumar021/ml_web_services/blob/main/image/ab_test.png")
+![alt text](https://github.com/Kumar021/ml_web_services/blob/main/image/ab_test.png?raw=true "algorithm ab test")
 
-Markup : ![picture alt]("https://github.com/Kumar021/ml_web_services/blob/main/image/api_endpoints.png")
+![alt text](https://github.com/Kumar021/ml_web_services/blob/main/image/api_endpoints.png?raw=true "API Endpoints")
 
-Markup : ![picture alt]("https://github.com/Kumar021/ml_web_services/blob/main/image/Predict-%E2%80%93-result_endpoints.png")
+![alt text](https://github.com/Kumar021/ml_web_services/blob/main/image/Predict-%E2%80%93-result_endpoints.png?raw=true "Predict Result")
 
-![alt text](https://github.com/Kumar021/ml_web_services/blob/main/image/MLRequest-object-2-Change-ml-request-Django-site-admin.png?raw=true")
-![picture alt](http://via.placeholder.com/200x150 "Title is optional")
+![alt text](https://github.com/Kumar021/ml_web_services/blob/main/image/MLRequest-object-2-Change-ml-request-Django-site-admin.png?raw=true "Django Admin")
