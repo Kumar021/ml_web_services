@@ -1,42 +1,17 @@
 import joblib
-import pandas as pd 
+import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder #
+from server.ml.income_classifier.random_forest import MultiColumnLabelEncoder
 
-class MultiColumnLabelEncoder:
-    """retun obejct"""
-    def __init__(self,columns = None):
-        self.columns = columns # array of column names to encode
-
-    def fit(self,X,y=None):
-        return self # not relevant here
-
-    def transform(self,X):
-        '''
-        Transforms columns of X specified in self.columns using
-        LabelEncoder(). If no columns specified, transforms all
-        columns in X.
-        '''
-        output = X.copy()
-        if self.columns is not None:
-            for col in self.columns:
-                output[col] = LabelEncoder().fit_transform(output[col])
-        else:
-            for colname,col in output.iteritems():
-                output[colname] = LabelEncoder().fit_transform(col)
-        return output
-
-    def fit_transform(self,X,y=None):
-        return self.fit(X,y).transform(X)
-
-
-class RandomForestClassifier:
+class ExtraTreesClassifier:
     def __init__(self):
         path_to_artifacts = "E:/JavaProgra/ML_and_DC/Project - Machine Learning/research/"
-        
-        self.model = joblib.load(path_to_artifacts + "random_forest.joblib")
+
+        self.model = joblib.load(path_to_artifacts + "extra_trees.joblib")
 
     def preprocessing(self, input_data):
+        # JSON to pandas DataFrame
         # JSON to pandas DataFrame
         new_dataset = pd.DataFrame(input_data, index=[0])
         # fill missing values
@@ -47,7 +22,6 @@ class RandomForestClassifier:
         new_input = MultiColumnLabelEncoder(columns = cate_columns).fit_transform(new_dataset.iloc[:, :])
 
         new_input_values = new_input.values
-        #print("new_input_values :", new_input)
 
         return new_input_values
 
@@ -69,6 +43,15 @@ class RandomForestClassifier:
             return {"status": "Error", "message": str(e)}
 
         return prediction
+
+
+
+
+
+
+
+
+
 
 
 
